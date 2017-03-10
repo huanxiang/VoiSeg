@@ -76,8 +76,7 @@ namespace itk {
  * IEEE Transactions on Medical Imaging, 29(6):1310-1320, June 2010.
  */
 
-template<class TInputImage, class TMaskImage = Image<unsigned char,
-  ::itk::GetImageDimension<TInputImage>::ImageDimension>,
+template<class TInputImage, class TMaskImage,
   class TOutputImage = TInputImage>
 class ITK_EXPORT N4MRIBiasFieldCorrectionImageFilter :
     public ImageToImageFilter<TInputImage, TOutputImage>
